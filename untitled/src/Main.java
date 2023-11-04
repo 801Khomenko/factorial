@@ -13,7 +13,7 @@ public class Main {
 
     public static long calculateFactorial(int n) {
         if (n < 0) {
-            return -1; // Якщо введено від'ємне число, повертаємо -1 як помилку.
+            throw new RuntimeException(); // Якщо введено від'ємне число, повертаємо Exception як помилку.
         }
 
         long factorial = 1;
